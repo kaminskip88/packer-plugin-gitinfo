@@ -10,6 +10,8 @@ packer {
 data "gitinfo-repo" "repo" {}
 
 locals {
-  commit = data.gitinfo-repo.repos.commit
-  branch = data.gitinfo-repo.repos.branch
+  commit = data.gitinfo-repo.repo.commit
+  branch = data.gitinfo-repo.repo.branch
+  tags = data.gitinfo-repo.repo.tags
+  latest_tag = data.gitinfo-repo.repo.latest_tag
 }
