@@ -7,7 +7,9 @@ packer {
   }
 }
 
-data "gitinfo-repo" "repo" {}
+data "gitinfo-repo" "repo" {
+  path = "."  # default
+}
 
 locals {
   commit = data.gitinfo-repo.repo.commit
