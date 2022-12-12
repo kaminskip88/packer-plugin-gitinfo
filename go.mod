@@ -8,4 +8,4 @@ require (
 	github.com/zclconf/go-cty v1.9.1
 )
 
-require github.com/go-git/go-git/v5 v5.4.2
+require github.com/go-git/go-git/v5 v5.5.1
